@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <TextView
+        android:id="@+id/reservation_name_label"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Restaurant name:"
+        app:layout_constraintEnd_toStartOf="@id/reservation_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/reservation_name"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reservation_name_label"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="teasdasd" />
+
+    <TextView
+        android:id="@+id/reservation_number_of_people_label"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Number of people:"
+        app:layout_constraintEnd_toStartOf="@id/reservation_name"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_name_label" />
+
+    <TextView
+        android:id="@+id/reservation_number_of_people"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reservation_name_label"
+        app:layout_constraintTop_toBottomOf="@+id/reservation_name"
+        tools:text="teasdasd" />
+
+    <TextView
+        android:id="@+id/reservation_date_label"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Reservation date:"
+        app:layout_constraintEnd_toStartOf="@id/reservation_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_number_of_people_label" />
+
+    <TextView
+        android:id="@+id/reservation_date"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reservation_date_label"
+        app:layout_constraintTop_toBottomOf="@id/reservation_number_of_people"
+        tools:text="teasdasd" />
+
+    <TextView
+        android:id="@+id/reservation_time_label"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Reservation time:"
+        app:layout_constraintEnd_toStartOf="@id/reservation_time"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reservation_date_label" />
+
+    <TextView
+        android:id="@+id/reservation_time"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/reservation_time_label"
+        app:layout_constraintTop_toBottomOf="@id/reservation_date"
+        tools:text="teasdasd" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/reservation_time_label" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

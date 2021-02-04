@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item
+        android:id="@+id/search_item"
+        android:title="Search"
+        android:icon="@android:drawable/ic_menu_search"
+        />
+
+    <item
+        android:id="@+id/reservations_item"
+        android:title="Reservations"
+        android:icon="@drawable/ic_baseline_format_list_bulleted_24"
+        />
+</menu>
